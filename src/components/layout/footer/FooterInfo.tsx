@@ -175,7 +175,7 @@ const FooterBottom = async () => {
   const footerConfig = footer || {}
   const { otherInfo } = footerConfig
   const currentYear = new Date().getFullYear().toString()
-  const { date = currentYear, icp, gov } = otherInfo || {}
+  const { date = currentYear, icp, gov, moe } = otherInfo || {}
 
   return (
     <div className="mt-12 space-y-3 text-center md:mt-6 md:text-left">
@@ -221,20 +221,37 @@ const FooterBottom = async () => {
           <Divider className="hidden md:inline" />
               )}
               
+             
         {gov && (
-                  <>
+            <>
             <Divider className="hidden md:inline" />
-            <StyledLink href={icp.link} target="_blank" rel="noreferrer">
-              {icp.text}
+            <StyledLink href={gov.link} target="_blank" rel="noreferrer">
+                {gov.text}
             </StyledLink>
-          </>
+            </>
         )}
 
         {gov ? (
-          <Divider className="inline" />
+            <Divider className="inline" />
         ) : (
-          <Divider className="hidden md:inline" />
+            <Divider className="hidden md:inline" />
               )}
+              
+        {moe && (
+            <>
+            <Divider className="hidden md:inline" />
+            <StyledLink href={moe.link} target="_blank" rel="noreferrer">
+                {moe.text}
+            </StyledLink>
+            </>
+        )}
+
+        {moe ? (
+            <Divider className="inline" />
+        ) : (
+            <Divider className="hidden md:inline" />
+                )}
+
 
 
         <GatewayInfo />
