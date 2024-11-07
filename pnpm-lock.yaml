@@ -113,8 +113,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       '@shiro/fetch':
-        specifier: file:./packages/fetch
-        version: file:packages/fetch
+        specifier: link:./packages/fetch
+        version: link:packages/fetch
       '@tanstack/query-async-storage-persister':
         specifier: 5.59.16
         version: 5.59.16
@@ -2140,9 +2140,6 @@ packages:
 
   '@shikijs/vscode-textmate@9.3.0':
     resolution: {integrity: sha512-jn7/7ky30idSkd/O5yDBfAnVt+JJpepofP/POZ1iMOxK59cOfqIgg/Dj0eFsjOTMw+4ycJN0uhZH/Eb0bs/EUA==}
-
-  '@shiro/fetch@file:packages/fetch':
-    resolution: {directory: packages/fetch, type: directory}
 
   '@sindresorhus/slugify@2.2.1':
     resolution: {integrity: sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==}
@@ -8576,8 +8573,6 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/vscode-textmate@9.3.0': {}
-
-  '@shiro/fetch@file:packages/fetch': {}
 
   '@sindresorhus/slugify@2.2.1':
     dependencies:
