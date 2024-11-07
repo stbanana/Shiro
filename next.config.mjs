@@ -41,7 +41,7 @@ let nextConfig = {
   },
   reactStrictMode: true,
   productionBrowserSourceMaps: false,
-  output: 'standalone',
+      output: 'standalone',
   assetPrefix: isProd ? env.ASSETPREFIX || undefined : undefined,
   compiler: {
     // reactRemoveProperties: { properties: ['^data-id$', '^data-(\\w+)-id$'] },
